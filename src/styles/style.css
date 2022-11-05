@@ -1,0 +1,22 @@
+.form-control{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 250px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.menuContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.menu{
+    max-width: 50%;
+    height: 50%;
+}
