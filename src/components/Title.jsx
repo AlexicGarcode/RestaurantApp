@@ -3,11 +3,6 @@ import React from 'react'
 const Title = () => {
   const array = [
     {
-      nombre: 'Kevin',
-      apellido: 'Luciano',
-      edad: 27
-    },
-    {
       nombre: 'Juan',
       apellido: 'Perez',
       edad: 30
