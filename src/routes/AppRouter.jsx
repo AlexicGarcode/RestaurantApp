@@ -13,7 +13,7 @@ const AppRouter = () => {
             <Route path="/ucampers" element={<UcampersPage/>}/>
             <Route path="/crud" element={<CrudPage/>}/>
             <Route path="/UcampersInfo" element={<MenuPage/>}/>
-            <Route path="*" element={<h1>Error 404</h1>}/>
+            <Route path="*" element={<h1>Juancho</h1>}/>
         </Routes>
     </Router>
   )
