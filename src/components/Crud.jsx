@@ -7,7 +7,9 @@ const initialForm = {
     nombre: '',
     apellido: '',
     edad: '',
-    bootcamp: ''
+    bootcamp: '',
+    verdura: '',
+    direccion: '',
 }
 
 const Crud = () => {
@@ -107,6 +109,18 @@ const Crud = () => {
                         setForm({ ...form, bootcamp: e.target.value });
                     }}
                     />
+
+                    <input
+                    id="verdura"
+                    type="text"
+                    placeholder="con todo?"
+                    autoComplete="off"
+                    className="form-control"
+                    value={form.bootcamp}
+                    onChange={(e) => {
+                        setForm({ ...form, bootcamp: e.target.value });
+                    }}
+                    />
                     <button
                     className="btn btn-primary btn-block mt-2"
                     onClick={async (e) => {
@@ -125,7 +139,7 @@ const Crud = () => {
             <ul className="list-group">
                 {ucamper.map((ucamper) => (
                     <li className="list-group-item" key={ucamper.id}>
-                        {ucamper.nombre} {ucamper.apellido} {ucamper.edad} {ucamper.bootcamp}
+                        {ucamper.nombre} {ucamper.apellido} {ucamper.edad} {ucamper.bootcamp} {ucamper.verdura}
                         <button
                         className="btn btn-danger btn-sm float-end"
                         onClick={() => deleteUcamper(ucamper.id)}
