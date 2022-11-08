@@ -1,4 +1,5 @@
 import React from "react";
+import imgHero from "../assets/img/hero.png"
 
 const ComponenteCualquiera = () => {
   return (
@@ -31,7 +32,9 @@ const ComponenteCualquiera = () => {
         <div className="overflow-hidden" style={{ maxHeight: "70vh" }}>
           <div className="container px-5">
             <img
-              src="hero.png"
+              src={
+                imgHero
+              }
               className="img-fluid border rounded-3 shadow-lg mb-4"
               alt="her are a delicious tacos"
               width={700}

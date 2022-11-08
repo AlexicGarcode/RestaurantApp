@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import CrudPage from '../pages/CrudPage';
 import HomePage from '../pages/HomePage';
 import MenuPage from '../pages/MenuPage';
@@ -9,11 +9,12 @@ const AppRouter = () => {
   return (
     <Router>
         <Routes>
-            <Route path="/" element={<HomePage/>}/>
+            
             <Route path="/ucampers" element={<UcampersPage/>}/>
             <Route path="/crud" element={<CrudPage/>}/>
-            <Route path="/UcampersInfo" element={<MenuPage/>}/>
-            <Route path="*" element={<h1>Juancho</h1>}/>
+            <Route path="/ucampersinfo" element={<MenuPage/>}/>
+            <Route path="*" element={<h1>Error404</h1>}/>
+            <Route path="/" element={<HomePage/>}/>
         </Routes>
     </Router>
   )
